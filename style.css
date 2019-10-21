@@ -1,0 +1,49 @@
+body {
+  margin-top: 0;
+  background-image: url("images/bg_main.png");
+}
+
+.main-table{
+  font-size: 15px;
+  overflow: auto;
+  border-collapse: collapse;
+  /*height: 580px;*/
+  width: 100%;
+  border: 1px solid darkgrey;
+}
+
+.main-table td{
+  background-color: #D8E6F3;
+  border: 1px solid darkgrey;
+}
+
+.main-table th{
+  background-color: #AFCDE7;
+}
+
+.main-table th input{
+  width: 100px;
+  float: left;
+}
+
+.main-table-head th{
+  position: sticky;
+  top:43px;
+}
+
+.main-table-filter th{
+  position: sticky;
+  top:21px;
+}
+
+.top-menu{
+  position: sticky;
+  top:0;
+  height: 22px;
+  text-align: center;
+  background-color: silver;
+}
+
+.helper{
+  width: 100%;
+}
