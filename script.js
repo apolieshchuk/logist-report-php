@@ -18,6 +18,7 @@ var addCheckHandler = function(checkbox){
 
 for(let checkbox of checkBoxes){
     addCheckHandler(checkbox);
+
 }
 
 
