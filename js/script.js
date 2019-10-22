@@ -32,6 +32,17 @@ copyBut.addEventListener( "click", function() {
         autoInBuffer.add(splittedAutoId);
     }
     console.log(autoInBuffer);
+
+    $.ajax({
+        url: "index.php",
+        method: "POST",
+        dataType: "json",
+        data: {randomAnswer: randomAnswer},
+        success: function (result) {
+            alert("result: " + result);
+            $("#random").html(result);
+        }
+    });
 });
 
 
