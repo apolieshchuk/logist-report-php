@@ -40,18 +40,18 @@
       $counter = 0;
       while($auto = $autoResult->fetch_assoc()):
         ++$counter?>
-        <tr>
-          <td><input type="checkbox" id="<?= 'auto-'.$auto['id']?>"</td>
+        <tr id="<?= 'row-'.$counter?>">
+          <td><input type="checkbox" id="<?= 'auto-'.$auto['id']?>"></td>
           <td><?= $counter ?></td>
-          <td><?= $auto['name']?></td>
-          <td><?= $auto['mark']?></td>
-          <td><?= $auto['auto_num']?></td>
-          <td><?= $auto['trail_num']?></td>
-          <td><?= $auto['dr_surn']?></td>
-          <td><?= $auto['dr_name']?></td>
-          <td><?= $auto['dr_fath']?></td>
-          <td><?= $auto['tel']?></td>
-          <td><?= $auto['notes']?></td>
+          <td class="name"><?= $auto['name']?></td>
+          <td class="mark"><?= $auto['mark']?></td>
+          <td class="auto_num"><?= $auto['auto_num']?></td>
+          <td class="trail_num"><?= $auto['trail_num']?></td>
+          <td class="dr_surn"><?= $auto['dr_surn']?></td>
+          <td class="dr_name"><?= $auto['dr_name']?></td>
+          <td class="dr_fath"><?= $auto['dr_fath']?></td>
+          <td class="tel"><?= $auto['tel']?></td>
+          <td class="notes"><?= $auto['notes']?></td>
         </tr>
       <?php endwhile;?>
     </tbody>
