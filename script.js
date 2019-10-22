@@ -2,7 +2,8 @@
 // создаем слушатели чекбоксов и вносим в список отмеченные авто
 let checkBoxes = document.querySelectorAll("input[type='checkbox']");
 let checkedAuto = new Set();
-for(let checkbox of checkBoxes){
+
+var addCheckHandler = function(checkbox){
     checkbox.addEventListener( 'change', function() {
         if(this.checked) {
             // Checkbox is checked..
@@ -13,8 +14,11 @@ for(let checkbox of checkBoxes){
         }
         console.log(checkedAuto);
     });
-}
+};
 
+for(let checkbox of checkBoxes){
+    addCheckHandler(checkbox);
+}
 
 
 //создаем слушатель кнопки
@@ -26,7 +30,6 @@ copyBut.addEventListener( "click", function() {
         let splittedAutoId = auto.split("-")[1];
         autoInBuffer.add(splittedAutoId);
     }
-
     console.log(autoInBuffer);
 });
 
